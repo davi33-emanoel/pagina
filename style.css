@@ -1,3 +1,8 @@
+@font-face{
+  font-family:gun;
+  src:url(./fontes/gunmetl.ttf)
+  
+}
 *{
     margin: 0;
     padding: 0;
@@ -12,20 +17,17 @@ body{
     display:flex;
     align-items: center;
     background-image: linear-gradient(to right, rgb(47, 8, 63) ,rgb(88, 15, 90),rgb(23, 47, 99));
-    opacity: 70%;
 }
 h1{
+  font-family:gun;
     align-items: center;
-    padding-bottom: 10px;
     text-align: start;
     font-style: italic;
     font-weight: bold;
-    font-size:60px;
-    font-family:HTNeonW01-Regular;
-    opacity:100%;
+    font-size:70px;
     margin-left: 130px;
-    color:rgb(0, 110, 253) ;
-    text-shadow:-3px 5px 5px rgb(78, 132, 248);
+    color:rgb(128, 23, 170) ;
+    text-shadow:-4px 2px 2px rgb(108, 211, 252);
     -webkit-text-stroke-width:0.01em;
     -webkit-text-stroke-color: black;
 }
@@ -43,7 +45,7 @@ h1{
     align-items: center;
     width:30vw;
     flex-direction: column;
-    margin-top:30px;
+    margin-top:-30px;
     height:50%;
 }
 .logo{
@@ -57,8 +59,10 @@ p{
     padding:0 20%;
     text-align:center;
     margin-top: 10px;
-    font-family:HTNeonW01-Regular;
+    font-size: 22px;
+    font-family: 'Karantina', cursive;
     color:white;
+    text-shadow:2px 2px 2px black;
 }
 .imagens{
     box-shadow: 2px 2px 4px black;
@@ -91,23 +95,23 @@ p{
   .modal-header{
     background-image: linear-gradient(to right, rgb(47, 8, 63) ,rgb(88, 15, 90),rgb(23, 47, 99));
     color:rgb(0, 0, 0) ;
-    border:1px dashed rgb(255, 253, 253);
+    border:1px dashed rgb(54, 154, 255);
     border-radius: 30px 30px 0 0;
   }
   .modal-title{
-    font-family:HTNeonW01-Regular;
+    font-family: 'Karantina', cursive;
     font-size:35px;
-    text-shadow:-3px 5px 5px rgb(78, 132, 248);
+    text-shadow:-3px 5px 5px rgb(0, 0, 0);
     -webkit-text-stroke-width:0.01em;
     -webkit-text-stroke-color: black;
-    color:rgb(255, 255, 255) ;
+    color:rgb(238, 238, 238) ;
   }
   .modal-body{
-    font-family:HTNeonW01-Regular;
+    font-family: 'Karantina', cursive;
     font-size: 25px;
     background-image: linear-gradient(to right, rgb(47, 8, 63) ,rgb(88, 15, 90),rgb(23, 47, 99));
     color:rgb(255, 255, 255) ;
-    text-shadow:-3px 5px 5px rgb(78, 132, 248);
+    text-shadow:-3px 5px 5px rgb(0, 0, 0);
     -webkit-text-stroke-width:0.01em;
     -webkit-text-stroke-color: black;
     border:1px dashed rgb(255, 255, 255);
@@ -123,11 +127,14 @@ p{
     border-radius:  0 0 30px 30px;
   }
   .btns{
-    font-family:HTNeonW01-Regular;
-    text-shadow:-3px 5px 5px rgb(78, 132, 248);
+    font-family: 'Karantina', cursive;
+    text-shadow:-3px 5px 5px rgb(0, 0, 0);
     font-size: 25px;
     background:none;
     border:none;
     color:rgb(255, 255, 255) ;
   }
- 
+  .glider-prev,.glider-next{
+    font-size: 80px;
+    color:white;
+  }
