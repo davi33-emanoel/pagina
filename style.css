@@ -31,9 +31,11 @@ h1{
 }
 .envelope{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    margin: 0 40px;
+
 }
 .descricao{
     display:flex;
@@ -84,6 +86,7 @@ p{
   }
   .filmes{
       box-sizing: border-box;
+      margin-right:180px ;
   }
   .modal-header{
     background-image: linear-gradient(to right, rgb(47, 8, 63) ,rgb(88, 15, 90),rgb(23, 47, 99));
