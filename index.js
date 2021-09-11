@@ -2,7 +2,7 @@
  function nome(){
   let arr=["evil+dead","star+wars","minha+mãe+é+uma+peça","pokemon","vampire+hunter+D"]
   for(let i=0;i<arr.length;i++){
-    $.ajax({url:`http://www.omdbapi.com/?t=${arr[i]}&apikey=42cfe2b5`,success:function(filme){
+    $.ajax({url:`https://www.omdbapi.com/?t=${arr[i]}&apikey=42cfe2b5`,success:function(filme){
       $('.imagens')[0].innerHTML+=`<div id="film3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-title="${filme.Title}" data-plot="${filme.Plot}" ><img src="${filme.Poster}"></div>`
     }});
   }
