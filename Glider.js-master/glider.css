@@ -71,7 +71,7 @@
   color: #a89cc8;
 }
 .glider-next {
-  right: -23px;
+  right: -10px;
   left: auto;
 }
 .glider-next.disabled,
@@ -89,7 +89,7 @@
 .glider-dots {
   user-select: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row wrap;
   justify-content: center;
   margin: 0 auto;
   padding: 0;
@@ -99,7 +99,7 @@
   padding: 0;
   user-select: none;
   outline: none;
-  display: block;
+  display: flex;
   cursor: pointer;
   color: #ccc;
   border-radius: 999px;

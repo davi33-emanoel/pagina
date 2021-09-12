@@ -1,23 +1,63 @@
 
  function nome(){
-  let arr=["evil+dead","star+wars","minha+mãe+é+uma+peça","pokemon","vampire+hunter+D"]
+  let arr=["evil+dead","star+wars","minha+mãe+é+uma+peça","pokemon","vampire+hunter+D","The+outsiders"]
   for(let i=0;i<arr.length;i++){
     $.ajax({url:`https://www.omdbapi.com/?t=${arr[i]}&apikey=42cfe2b5`,success:function(filme){
       $('.imagens')[0].innerHTML+=`<div id="film3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-title="${filme.Title}" data-plot="${filme.Plot}" ><img src="${filme.Poster}"></div>`
     }});
   }
  }
+
  setTimeout(function (){
-  new Glider(document.querySelector('.imagens'), {
+  let slider=new Glider(document.querySelector('.imagens'), {
     slidesToShow: 1,
-    dots: '#dots',
+    dots: '.dots',
     draggable: true,
     arrows: {
       prev: '.glider-prev',
       next: '.glider-next'
     }
   });
- },2000)
+  slideAutoPaly(slider, '.imagens');
+
+function slideAutoPaly(glider, selector, delay = 4000, repeat = true) {
+    let autoplay = null;
+    const slidesCount = glider.track.childElementCount;
+    let nextIndex = 1;
+    let pause = true;
+
+    function slide() {
+        autoplay = setInterval(() => {
+            if (nextIndex >= slidesCount) {
+                if (!repeat) {
+                    clearInterval(autoplay);
+                } else {
+                    nextIndex = 0;
+                }
+            }
+            glider.scrollItem(nextIndex++);
+        }, delay);
+    }
+
+    slide();
+
+    var element = document.querySelector(selector);
+    element.addEventListener('mouseover', (event) => {
+        if (pause) {
+            clearInterval(autoplay);
+            pause = false;
+        }
+    }, 300);
+
+    element.addEventListener('mouseout', (event) => {
+        if (!pause) {
+            slide();
+            pause = true;
+        }
+    }, 300);}
+  
+ },1000)
+
 document.addEventListener('click', function(event){
   if(event.target.id=="film3"){
     let nome_filme=event.target.getAttribute('data-title');

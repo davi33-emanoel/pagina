@@ -138,3 +138,10 @@ p{
     font-size: 80px;
     color:white;
   }
+  .bts{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    margin-top: -15px;
+  }
