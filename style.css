@@ -145,3 +145,24 @@ p{
     flex-direction:row;
     margin-top: -15px;
   }
+  .filme4{
+    display:flex;
+    justify-content:space-around;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    cursor: pointer;
+    height:1400px;
+  }
+  .vitrine{
+    height: 350px;
+    width: 230px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 20px;
+  }
+  .vitrine>img{
+    height: 350px;
+    width: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
