@@ -3,22 +3,59 @@
   src:url(./fontes/gunmetl.ttf)
   
 }
+@keyframes cor{
+ 
+  50%{
+    filter: drop-shadow(0 0 16px rgb(218, 51, 129));
+  }
+  50%{
+    filter: drop-shadow(0 0 16px rgb(221, 0, 29));
+  }
+
+  50%{
+    filter: drop-shadow(0 0 16px rgb(190, 0, 111));
+  }
+  50%{
+    filter: drop-shadow(0 0 16px rgb(0, 201, 167));
+  }
+  75%{
+    filter: drop-shadow(0 0 16px rgb(8, 4, 255));
+  }
+ 100%{
+  filter: drop-shadow(0px 2px 17px rgb(255, 5, 192));
+  }
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(to right, rgb(73, 12, 97) ,rgb(121, 24, 124),rgb(60, 90, 155));
+    background-image: linear-gradient(to right, rgb(28, 7, 77) ,rgb(71, 9, 87),rgb(28, 55, 114));
     width: 100%;
     min-height:100vh;
 }
 .cabecalho{
     display:flex;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(47, 8, 63) ,rgb(88, 15, 90),rgb(23, 47, 99));
+    padding-left:100px;
+    background-image: linear-gradient(to right, rgb(34, 10, 92) ,rgb(86, 15, 104),rgb(28, 55, 114));
+    height: 100px;
+    padding-top: 20px;
+    width: 100%;
 }
-h1{
+.titulo{
+  
+  height: 80px;
+  width: 50vh;
+  opacity: 90%;
+  filter: drop-shadow(0px 2px 17px rgb(255, 5, 192));
+  animation-name:cor;
+  animation-duration:8s;
+  animation-iteration-count: infinite;
+
+}
+/* .techflix{
   font-family:gun;
     align-items: center;
     text-align: start;
@@ -26,11 +63,11 @@ h1{
     font-weight: bold;
     font-size:70px;
     margin-left: 130px;
-    color:rgb(128, 23, 170) ;
-    text-shadow:-4px 2px 2px rgb(108, 211, 252);
-    -webkit-text-stroke-width:0.01em;
-    -webkit-text-stroke-color: black;
-}
+    color:rgb(218, 14, 190) ;
+    text-shadow:8px 0px 3px #1da5e4,0px 0px 5px #0992d1 ,0px 0px 7px #0992d1;
+  -webkit-text-stroke-width:0.01em;
+  -webkit-text-stroke-color: black;
+} */
 .envelope{
     display: flex;
     justify-content: space-between;
@@ -47,13 +84,14 @@ h1{
     flex-direction: column;
     margin-top:-30px;
     height:50%;
+    
 }
 .logo{
     width: 50%;
     height:50%;
-border-radius: 20px;
-opacity: 70%;
+border-radius: 100px;
 box-shadow: 9px -10px 19px black;
+opacity:90%;
 }
 p{
     padding:0 20%;
@@ -65,12 +103,13 @@ p{
     text-shadow:2px 2px 2px black;
 }
 .imagens{
-    box-shadow: 2px 2px 4px black;
+    box-shadow: 8px -6px 10px black;
     overflow: hidden;
     height:400px;
     width: 280px;
     margin-top: 40px;
     border-radius: 20px;
+    opacity:90%;
 }
 .container{
     display:flex;
