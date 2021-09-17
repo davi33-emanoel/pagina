@@ -103,15 +103,14 @@
   cursor: pointer;
   color: #ccc;
   border-radius: 999px;
-  background: #ccc;
+  background: rgba(223, 20, 250, 0.555);
   width: 12px;
   height: 12px;
   margin: 7px;
 }
 .glider-dot:hover,
-.glider-dot:focus,
 .glider-dot.active {
-  background: #a89cc8;
+  background: #3504bb;
 }
 @media(max-width: 36em){
   .glider::-webkit-scrollbar {
