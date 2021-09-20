@@ -85,5 +85,4 @@ document.addEventListener('click', function(event){
   }
   console.log(event)
 })
-console.log($('.filme4')[0])
  nome(), film()

@@ -4,15 +4,15 @@
   
 }
 @keyframes cor{
-  30%{
+  20%{
     filter: drop-shadow(6px -8px 16px rgb(253, 0, 118));
   }
   50%{
-    filter: drop-shadow(6px -8px 16px rgb(252, 11, 252));
+    filter: drop-shadow(6px -8px 16px rgb(11, 204, 252));
   }
 
- 70%{
-    filter: drop-shadow(6px -8px 16px rgb(253, 25, 177));
+ 80%{
+    filter: drop-shadow(6px -8px 16px rgb(166, 0, 199));
   }
 }
 /* @keyframes cor_2{
@@ -45,30 +45,26 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(to right, rgb(28, 7, 77) ,rgb(71, 9, 87),rgb(28, 55, 114));
+    background-image: linear-gradient(to right, rgb(8, 8, 8) ,rgb(20, 20, 20),rgb(41, 41, 41));
     width: 100%;
     min-height:100%;
 }
 .cabecalho{
     display:flex;
     align-items: center;
-    padding-left:100px;
-    background-image: linear-gradient(to right, rgb(34, 10, 92) ,rgb(86, 15, 104),rgb(28, 55, 114));
+    justify-content:space-between;
+    background-image: linear-gradient(to right, rgb(7, 7, 7) ,rgb(19, 19, 19),rgb(39, 39, 39));
     height: 100px;
     width: 100%;
+    
 }
-h1{
+.logo_1{
   
-  height: 80px;
+  height:80px;
   width: 50vh;
-  filter: drop-shadow(6px -8px 16px rgb(255, 0, 149));
-  animation:cor 8s infinite;
-  font-family:gun;
-  align-items: center;
-  text-align: start;
-  font-style: italic;
-  font-weight: bold;
-  font-size:70px;
+  margin-left: 100px;
+  filter: drop-shadow(5px -2px 3px rgb(255, 0, 149));
+  /* animation:cor 8s infinite; */
   color:rgb(255, 255, 255) ;
   -webkit-text-stroke-width:0.01em;
   -webkit-text-stroke-color: black;
@@ -84,6 +80,7 @@ h1{
     align-items: center;
      flex-wrap: nowrap; 
      margin: 0 40px; 
+     
 
 }
 .descricao{
@@ -97,9 +94,11 @@ h1{
     
 }
 .logo{
-    width: 90%;
-    height:90%;
+    width:100%;
+    height:100%;
     margin-top: -40px;
+    filter: drop-shadow(6px -8px 16px rgb(255, 0, 149));
+  animation:cor 8s infinite;
 /* animation:cor_2 8s infinite; */
 /* filter: drop-shadow(6px -8px 15px rgb(0, 183, 255)); */
 /* margin-top: -80px; */
@@ -107,12 +106,14 @@ h1{
 p{
     padding:0 20%;
     text-align:center;
-    margin-top: -70px;
+    margin-top: -90px;
     font-size: 17px;
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
     color:white;
     text-shadow:2px -2px 6px black;
+    filter: drop-shadow(6px -8px 16px rgb(255, 0, 149));
+    animation:cor 8s infinite;
 }
 .imagens{
     box-shadow: 8px -6px 10px black;
@@ -142,6 +143,9 @@ p{
   .filmes{
       box-sizing: border-box;
       margin-right:180px ;
+      filter: drop-shadow(6px -8px 16px rgb(255, 0, 149));
+    animation:cor 8s infinite;
+      
   }
   .modal-header{
     background-image: linear-gradient(to right, rgb(47, 8, 63) ,rgb(88, 15, 90),rgb(23, 47, 99));
@@ -190,6 +194,7 @@ p{
     background:none;
     border:none;
     color:rgb(255, 255, 255) ;
+    
   }
   .glider-prev,.glider-next{
     display:none;
@@ -199,6 +204,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction:row;
+    
   }
   .filme4{
     display:flex;
